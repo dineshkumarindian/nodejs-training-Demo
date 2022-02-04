@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head><tittle>ChatApp</tittle></head>
+    <body class="chat">
+        <form id='message-form'>
+            <input name="message" type="text" placeholder="message" >
+            <button>send</button>
+            <script src="/node/websocket.js"></script>
+            <script>
+                let socket =io()    
+                socket.on('connect',() =>{
+                    console.log('connected to the server');
+                });
+                socket.on('newMessage',(message) =>{
+                    console.log(message);
+                })
+                socket.emit('createMessage',{
+                    to:'john@ds',
+                    text:'whattt'
+                })
+                socket.on('disconeect',()=>{
+                    console.log('disconnect form server');
+                })
+            </script>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+[{
+    "id":1,
+    "firstName":"dinesh",
+    "lastName":"kumar",
+    "age":22,
+    "place":"Tiruchengode"
+},{
+    "id":2,
+    "firstName":"logu",
+    "lastName":"kannan",
+    "age":22,
+    "place":"erode"},
+{
+    "id":3,
+    "firstName":"akshay",
+    "lastName":"kumar",
+    "age":22,
+    "place":"salem"
+}]
